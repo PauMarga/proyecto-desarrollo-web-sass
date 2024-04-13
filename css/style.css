@@ -136,7 +136,7 @@ footer section {
       height: 400px; }
 
 .contacto {
-  background-image: url(../../../assets/luzVerde.jpg);
+  background-image: url(../assets/luzVerde.jpg);
   opacity: 0.7;
   height: 500px;
   background-position: center;
@@ -325,3 +325,6 @@ footer section {
     width: 350px;
     height: 150px;
     padding: 30px; } }
+
+.contacto {
+  background-image: url(../assets/luzVerde.jpg); }
