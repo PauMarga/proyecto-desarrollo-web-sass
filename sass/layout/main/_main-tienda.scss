@@ -1,0 +1,19 @@
+.cuadros{
+    @include grid (repeat(2, 1fr), repeat(2,1fr), center, center, "area1 area2""area3 area4");
+    div{
+        margin: 30px 50px 30px 50px;
+        img{
+            width: 500px;
+        }
+        h2{
+            color: map-get($colores, fuente);
+            font-size: 30px;
+            font-family: $fuentePrincipal;
+            text-align: center;
+        }
+        p{
+            @extend h2;
+            font-size: 20px;
+        }
+    }
+}

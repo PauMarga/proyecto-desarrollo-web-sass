@@ -1,0 +1,75 @@
+@media (max-width:425px) {
+    header{
+        section{
+            nav{
+                #toggle:checked ~ .lista{ 
+                    height: 300%; 
+                } 
+                .logoMenuHamburguesa{
+                    width: 120px;
+                }
+                label{
+                    .menuImagen{
+                        width: 30px;
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .galeria{
+        div{
+            .tamanoCarrousel{
+                width: 350px;
+            }
+        }
+    }
+    .sobre-mi{
+        @include flex (column, center, center);
+        div{
+            img{
+                width: 350px;
+            }
+            p{
+                font-size: 15px;
+                height: 320px;
+            }
+        }
+    }
+    .cuadros{
+        height: 160vh;
+        div{
+            img{
+                width: 350px;
+            }
+            h2{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    .contacto{
+        div{
+            form{
+                width: 350px;
+                height: 300px;
+                margin: 10px;
+            }
+            p{
+                font-size: 15px;
+                width: 350px;
+                height: 150px;
+                padding: 30px;
+            }
+        }
+    }
+
+}

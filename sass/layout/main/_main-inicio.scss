@@ -1,0 +1,15 @@
+.h1inicio{
+    font-family: $fuentePrincipal;
+    color: map-get($colores, fuente);
+    font-size: 35px;
+    margin: 20px;
+    display: none;
+}
+
+.imagen-fondo-inicio{
+    background-image: url("../assets/vintage.jpg");
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size:cover;  
+}

@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Julius Sans One", sans-serif;
+    color: map-get($colores, fuente);
+    font-size: 35px;
+    margin: 20px;
+}

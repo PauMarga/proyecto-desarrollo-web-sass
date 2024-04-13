@@ -1,0 +1,22 @@
+footer{
+    section{
+        @include flex(row, space-evenly, center);
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 100px;
+            div{
+                @include flex (row, center, center);
+                align-content: center;
+                text-decoration: none;
+                color: map-get($colores, fuente);
+                font-size: 15px;
+                font-family:$fuentePrincipal;
+                a{
+                    @include flex (row, center, center);
+                    img{
+                        width: 10%;
+                    }
+                }
+            }
+    }
+}

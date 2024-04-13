@@ -1,0 +1,14 @@
+.galeria{
+    @include flex(column, center, center);
+    div{
+        h2{
+            padding: 50px;
+            font-size: 20px;
+            font-family: $fuentePrincipal;
+            color: map-get($colores, fuente);
+        }
+        .tamanoCarrousel{
+            width: 700px;
+        }
+    }
+}

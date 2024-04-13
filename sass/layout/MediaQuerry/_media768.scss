@@ -1,0 +1,126 @@
+@media (max-width:768px) {
+    header{
+        section{
+            nav{
+                @include grid ((80% 20%), repeat(3,1fr), center, center, "logo toggle""logo menuImagen""logo lista");
+                justify-items: center;
+                margin-top: 10px;
+                height: 180px;
+                    .logoMenuHamburguesa{ 
+                        display: flex; 
+                        color: white; 
+                        cursor: pointer;
+                        grid-area: logo;
+                        width: 150px;
+                        margin-left: 110px;
+                    }
+                label{
+                    display: flex;
+                    .menuImagen{
+                        display: inline-flex; 
+                        color: white; 
+                        cursor: pointer;
+                        grid-area: menuImagen;
+                        width: 50px;
+                    }
+                }
+                #toggle{ 
+                    display: inline-flex; 
+                    color: white; 
+                    cursor: pointer;
+                    grid-area: toggle;
+                    display: none;
+                }
+                #toggle:checked ~ .lista{ 
+                    height: 300%; 
+                }
+                .lista{ 
+                    width: 150px; 
+                    height: 0px; 
+                    overflow: hidden;
+                    @include flex (column, none, flex-start);
+                    grid-area: lista;
+                    margin-right: 10px;
+                    background-color: white;
+                    border-radius: 0.4rem;
+                    li{
+                        a{
+                            .logo{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        section{
+        @include flex(column, center, center);
+        margin-left: 0;
+        width: 100%;
+        div{
+            padding: 10px;
+        }
+        }
+    }
+
+
+.galeria{
+    div{
+        .tamanoCarrousel{
+            width: 500px;
+        }
+    }
+}
+
+.sobre-mi{
+    div{
+        padding: 10px;
+        img{
+            width: 400px;
+        }
+        p{
+            height: 80vh;
+            width: 300px;
+            padding: 32px;
+        }
+    }
+}
+
+.cuadros{
+    @include grid ((1,1fr),(4,1fr),center,center, "descripcion1""cuadro1""descripcion2""cuadro2");
+    justify-items: center;
+    height: 200vh;
+    .cuadro1{
+        grid-area: cuadro1;
+    }
+    .cuadro2{
+        grid-area: cuadro2;
+    }
+    .descripcion1{
+        grid-area: descripcion1;
+    }
+    .descripcion2{
+        grid-area: descripcion2;
+    }
+}
+
+.contacto{
+    @include flex (column-reverse, center, center);
+    padding: 10px;
+    margin-top: 20px;
+    div{
+    form{
+        width: 400px;
+        height: 300px;
+        margin: 10px;
+    }
+    p{
+        font-size: 15px;
+        width: 500px;
+        height: 150px;
+        margin: 10px;
+    }}
+}
+}
