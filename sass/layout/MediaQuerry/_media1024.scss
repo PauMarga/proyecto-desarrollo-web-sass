@@ -12,8 +12,41 @@
             }
         }
     }
+    .sobre-mi{
+        div{
+            p{
+                width: 430px;
+                height: 340px;
+            }
+        }
+    }
+    .cuadros{
+        div{
+            img{
+                width: 400px;
+            }
+            .linea3{
+                width: 300px;
+            }
+        }
+    }
+    header{
+        nav{
+            ul{
+                .linkIndex::after{
+                    width: 380px;
+                }
+                .linkIndex::before{
+                    width: 380px;
+                    margin-left: -380px;
+                }
+            }
+        }
+
+    }
     footer{
         section{
-        margin-left: 90px;}
+            margin-left: 90px;
+        }
     }
 }

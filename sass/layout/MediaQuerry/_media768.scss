@@ -114,8 +114,10 @@
 }
 
 .cuadros{
-    @include grid (1, (4,1fr), center, center, "cuadro1""descripcion1""cuadro2""descripcion2");
-    height: 230vh;
+    @include grid (repeat(1,1fr), repeat(4,1fr), center, center, "cuadro1""descripcion1""cuadro2""descripcion2");
+    height: 200vh;
+    justify-items: center;
+    align-content: center;
     .cuadro1{
         grid-area: cuadro1;
     }
@@ -124,7 +126,6 @@
     }
     .descripcion1{
         grid-area: descripcion1;
-        
     }
     .descripcion2{
         grid-area: descripcion2;
