@@ -1,5 +1,5 @@
 .cuadros{
-    @include grid (repeat(2, 1fr), repeat(2,1fr), center, center, "area1 area2""area3 area4");
+    @include grid (repeat(2, 1fr), repeat(2,1fr), center, center, "cuadro1 descripcion1""descripcion2 cuadro2");
     div{
         margin: 30px 50px 30px 50px;
         img{
@@ -13,7 +13,26 @@
         }
         p{
             @extend h2;
+            text-align: center;
             font-size: 20px;
+            padding: 20px;
+        }
+        .linea3{
+            background-color: map-get($colores, fuente);
+            width: 400px;
+            height: 1.5px;
+        }
+        .cuadro1{
+            grid-area: cuadro1;
+        }
+        .cuadro2{
+            grid-area: cuadro2;
+        }
+        .descripcion1{
+            grid-area: descripcion1;
+        }
+        .descripcion2{
+            grid-area: descripcion2;
         }
     }
 }

@@ -50,6 +50,12 @@
                             }
                         }
                     }
+                    .linkIndex::after{
+                        display: none;
+                    }
+                    .linkIndex::before{
+                        display: none;
+                    }
                 }
             }
         }
@@ -62,6 +68,15 @@
         div{
             padding: 10px;
         }
+        a::after{
+            display: none;
+        }
+        a::before{
+            display: none;
+        }
+        }
+        .linea2{
+            display: none;
         }
     }
 
@@ -76,22 +91,31 @@
 
 .sobre-mi{
     div{
-        padding: 10px;
+        margin: 10px;
+        padding: 0;
         img{
-            width: 400px;
+            width: 350px;
+        }
+        h2{
+            font-size: 40px;
+            margin-bottom: 15px;
         }
         p{
-            height: 80vh;
+            height: 48vh;
             width: 300px;
-            padding: 32px;
+            font-size: 15px;
+        }
+        .linea4{
+            width: 200px;
+            margin-left: 60px;
+            margin-bottom: 15px;
         }
     }
 }
 
 .cuadros{
-    @include grid ((1,1fr),(4,1fr),center,center, "descripcion1""cuadro1""descripcion2""cuadro2");
-    justify-items: center;
-    height: 200vh;
+    @include grid (1, (4,1fr), center, center, "cuadro1""descripcion1""cuadro2""descripcion2");
+    height: 230vh;
     .cuadro1{
         grid-area: cuadro1;
     }
@@ -100,9 +124,13 @@
     }
     .descripcion1{
         grid-area: descripcion1;
+        
     }
     .descripcion2{
         grid-area: descripcion2;
+    }
+    .linea3{
+        display: none;
     }
 }
 

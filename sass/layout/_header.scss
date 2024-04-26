@@ -21,11 +21,29 @@ header{
                     font-size: 20px;
                     font-family: $fuentePrincipal;
                         img{
-                            width: 130px;
+                            width: 160px;
                         }
                 }
+            }
+            .linkIndex::after{
+                content:'';
+                position: absolute;
+                width: 480px;
+                height: 1px;
+                background-color: map-get($colores, fuente);
+                margin-top: 125px;
+            }
+            .linkIndex::before{
+            content:'';
+            position: absolute;
+            width: 480px;
+            height: 1px;
+            background-color: map-get($colores, fuente);
+            margin-top: 125px;
+            margin-left: -480px;
             }
         }
     }
     
 }
+

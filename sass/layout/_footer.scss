@@ -17,6 +17,38 @@ footer{
                         width: 10%;
                     }
                 }
+                a::after{
+                    content:'';
+                    position: absolute;
+                    width: 300px;
+                    height: 1px;
+                    background-color: map-get($colores, fuente);
+                    margin-top: 40px;
+                    margin-left: 500px;
+                }
+                a::before{
+                content:'';
+                position: absolute;
+                width: 300px;
+                height: 1px;
+                background-color: map-get($colores, fuente);
+                margin-top: 40px;
+                margin-left: -500px;
+                }
             }
+    }
+    .linea1{
+        background-color: map-get($colores, fuente);
+        width: 100%;
+        height: 3px;
+        margin: 30px 0px 20px 0px;
+    }
+    .linea2{
+        background-color: map-get($colores, fuente);
+        width: 60%;
+        height: 1px;
+        margin-top: 30px;
+        margin-left: 250px;
+        margin-bottom: 20px;
     }
 }

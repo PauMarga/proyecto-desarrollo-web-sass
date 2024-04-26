@@ -1,16 +1,17 @@
 .sobre-mi{
-    @include flex(row, space-evenly, center);
+    @include flex(row, center, center);
     div{
         padding: 30px;
         img{
-            width: 600px;
+            width: 450px;
         }
         h2{
             color: map-get($colores, fuente);
-            font-size: 50px;
+            font-size: 60px;
             font-family: $fuenteSecuendaria;
             text-align: center;
             transform: rotate(-18deg);
+            margin-bottom: 30px;
         }
         p{
             background-color: map-get($colores, fondo);
@@ -19,8 +20,16 @@
             font-family: $fuentePrincipal;
             text-align: center;
             padding: 30px;
-            width: 400px;
-            height: 400px;
+            width: 530px;
+            height: 290px;
+        }
+        .linea4{
+            background-color: map-get($colores, fuente);
+            width: 350px;
+            height: 1px;
+            padding: 0;
+            margin-top: 10px;
+            margin-left: 80px;
         }
     }
 }
