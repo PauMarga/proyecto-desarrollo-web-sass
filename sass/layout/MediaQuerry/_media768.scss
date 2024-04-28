@@ -65,91 +65,87 @@
         @include flex(column, center, center);
         margin-left: 0;
         width: 100%;
-        div{
-            padding: 10px;
-        }
-        a::after{
-            display: none;
-        }
-        a::before{
-            display: none;
-        }
+            div{
+                padding: 10px;
+            }
+            a::after{
+                display: none;
+            }
+            a::before{
+                display: none;
+            }
         }
         .linea2{
             display: none;
         }
     }
-
-
-.galeria{
-    div{
-        .tamanoCarrousel{
-            width: 500px;
+    .galeria{
+        div{
+            .tamanoCarrousel{
+                width: 500px;
+               }
         }
     }
-}
-
-.sobre-mi{
-    div{
-        margin: 10px;
-        padding: 0;
-        img{
-            width: 350px;
+    .sobre-mi{
+        div{
+            margin: 10px;
+            padding: 0;
+            img{
+                width: 350px;
+            }
+            h2{
+                font-size: 40px;
+                margin-bottom: 15px;
+            }
+            p{
+                height: 48vh;
+                width: 300px;
+                font-size: 15px;
+            }
+            .linea4{
+                width: 200px;
+                margin-left: 60px;
+                margin-bottom: 15px;
+            }
         }
-        h2{
-            font-size: 40px;
-            margin-bottom: 15px;
+    }
+    .cuadros{
+        @include grid (repeat(1,1fr), repeat(4,1fr), center, center, "cuadro1""descripcion1""cuadro2""descripcion2");
+        height: 200vh;
+        justify-items: center;
+        align-content: center;
+        .cuadro1{
+            grid-area: cuadro1;
         }
-        p{
-            height: 48vh;
-            width: 300px;
-            font-size: 15px;
+        .cuadro2{
+            grid-area: cuadro2;
         }
-        .linea4{
-            width: 200px;
-            margin-left: 60px;
-            margin-bottom: 15px;
+        .descripcion1{
+            grid-area: descripcion1;
+        }
+        .descripcion2{
+            grid-area: descripcion2;
+        }
+        .linea3{
+            display: none;
         }
     }
-}
-
-.cuadros{
-    @include grid (repeat(1,1fr), repeat(4,1fr), center, center, "cuadro1""descripcion1""cuadro2""descripcion2");
-    height: 200vh;
-    justify-items: center;
-    align-content: center;
-    .cuadro1{
-        grid-area: cuadro1;
+    .contacto{
+        @include flex (column-reverse, center, center);
+        padding: 10px;
+        margin-top: 20px;
+        div{
+            form{
+                width: 400px;
+                height: 300px;
+                margin: 10px;
+            }
+            p{
+                font-size: 15px;
+                width: 500px;
+                height: 150px;
+                margin: 10px;
+            }
+        }
     }
-    .cuadro2{
-        grid-area: cuadro2;
-    }
-    .descripcion1{
-        grid-area: descripcion1;
-    }
-    .descripcion2{
-        grid-area: descripcion2;
-    }
-    .linea3{
-        display: none;
-    }
-}
-
-.contacto{
-    @include flex (column-reverse, center, center);
-    padding: 10px;
-    margin-top: 20px;
-    div{
-    form{
-        width: 400px;
-        height: 300px;
-        margin: 10px;
-    }
-    p{
-        font-size: 15px;
-        width: 500px;
-        height: 150px;
-        margin: 10px;
-    }}
-}
 }
